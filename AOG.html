@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AOG Alliance Rules</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: radial-gradient(circle at top, #1a1a1a, #0a0a0a);
+        color: #e5e7eb;
+    }
+
+    .container {
+        max-width: 700px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #d4af37;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #aaa;
+        margin-bottom: 25px;
+    }
+
+    .card {
+        background: rgba(17,17,17,0.85);
+        border: 1px solid rgba(212,175,55,0.25);
+        border-radius: 14px;
+        padding: 18px;
+        margin-bottom: 18px;
+    }
+
+    .card h3 {
+        color: #d4af37;
+        margin-top: 0;
+    }
+
+    ul { padding-left: 18px; }
+    li { margin-bottom: 6px; }
+
+    .warning { color: #fca5a5; }
+    .ok { color: #86efac; }
+
+    hr {
+        border: none;
+        border-top: 1px solid rgba(212,175,55,0.2);
+        margin: 12px 0;
+    }
+
+    /* LOGO */
+    .logo {
+        text-align: center;
+        margin: 15px 0 10px;
+    }
+
+    .logo img {
+        width: 300px;
+        max-width: 65%;
+        filter: drop-shadow(0 0 10px rgba(212,175,55,0.4));
+    }
+
+    /* HERO */
+    .hero {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 6px 0;
+    }
+
+    .hero img {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid rgba(212,175,55,0.4);
+    }
+
+    /* MUSIC */
+    .music-box {
+        text-align: center;
+        margin-bottom: 15px;
+        padding: 8px;
+        background: rgba(0,0,0,0.35);
+        border: 1px solid rgba(212,175,55,0.25);
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .controls {
+        margin-top: 6px;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    button {
+        padding: 5px 10px;
+        font-size: 12px;
+        border-radius: 6px;
+        background: #d4af37;
+        border: none;
+        cursor: pointer;
+    }
+
+    input[type="range"] {
+        width: 80px;
+    }
+
+    a { color: #f5d77a; text-decoration: none; }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- MUSIC -->
+<div class="music-box">
+    🔊 Background Music<br>
+    <small>Created by Valhalla Asagard</small>
+
+    <audio id="bgMusic" loop>
+        <source src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/audio.mp3">
+    </audio>
+
+    <div class="controls">
+        <button onclick="toggleMusic()" id="playBtn">▶ Play</button>
+        🔊 <input type="range" min="0" max="1" step="0.01" value="0.1" id="volumeSlider">
+        <a href="https://suno.com/s/cdCDzAd5TfGmnDFt" target="_blank">🎵 Song</a>
+    </div>
+</div>
+
+<!-- LOGO -->
+<div class="logo">
+    <img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/logo.png">
+</div>
+
+<h1>🛡️ AOG Alliance Rules</h1>
+<p class="subtitle">All members must follow these rules</p>
+
+<!-- GENERAL -->
+<div class="card">
+<h3>📜 General Rules</h3>
+<p>Joining the alliance means accepting all rules.</p>
+<p>Attacking NAP alliances is strictly forbidden.</p>
+</div>
+
+<!-- BEHAVIOR -->
+<div class="card">
+<h3>⚖️ Behavior</h3>
+<ul>
+<li>No racism, insults, or politics.</li>
+<li class="warning">Warning → Kick → Blacklist</li>
+</ul>
+</div>
+
+<!-- POSITION -->
+<div class="card">
+<h3>📍 Positioning</h3>
+<ul>
+<li>Only assigned attackers near Bear Trap.</li>
+<li>Wrong placement harms alliance.</li>
+<li class="warning">Day 1 Warning / Day 2 Kick</li>
+</ul>
+</div>
+
+<!-- ACTIVITY -->
+<div class="card">
+<h3>🕒 Activity</h3>
+<p>Inactive players must inform R4/R5.</p>
+</div>
+
+<!-- EVENTS -->
+<div class="card">
+<h3>⚔️ Events</h3>
+
+<p><b>FORTRESS & SANCTUARY BATTLE</b></p>
+<p>Rally Leaders: R5 & R4</p>
+
+<p>Attack Joiners:</p>
+<div class="hero">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Chenko.avif">
+<span>Chenko + any heroes</span>
+</div>
+
+<p>Defense Joiners:</p>
+<div class="hero">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Gordon.webp">
+<span>Gordon + any hero</span>
+</div>
+<div class="hero">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Howard.avif">
+<span>Howard + any hero</span>
+</div>
+<div class="hero">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Zoe.avif">
+<span>Zoe + any hero</span>
+</div>
+
+<hr>
+
+<p><b>BEAR HUNT (Bear Trap)</b></p>
+<p>Rally Leaders: R5 / R4 / +500K attackers</p>
+<p>Top 3 strongest heroes required</p>
+
+<p>Joiners (First Hero must be):</p>
+
+<div class="hero">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Chenko.avif">
+<span>Chenko</span>
+</div>
+
+<div class="hero">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Amane.avif">
+<span>Amane</span>
+</div>
+
+<div class="hero">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Yeonwoo.avif">
+<span>Yeonwoo</span>
+</div>
+
+<div class="hero">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Amadeus.avif">
+<span>Amadeus</span>
+</div>
+
+<div class="hero">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Hilde.avif">
+<span>Hilde</span>
+</div>
+
+<p class="ok">If missing heroes → send troops only (no heroes)</p>
+
+<hr>
+
+<p><b>ALL-OUT EVENT RULES</b></p>
+<ul>
+<li>NAP alliances remain protected</li>
+<li>RSS gatherers are valid targets</li>
+<li>Attack troops only (not cities)</li>
+<li>No retaliation for tile hits</li>
+<li>Rules reset after event</li>
+</ul>
+
+</div>
+
+<!-- NAP -->
+<div class="card">
+<h3>🛑 NAP Protected Alliances</h3>
+<ul>
+<li>TAO / Tao</li>
+<li>DIE / die</li>
+<li>AOG / AoG</li>
+<li>INB / inb</li>
+<li>JON</li>
+<li>KOR</li>
+<li>LEX / lex</li>
+<li>PxP / lux</li>
+</ul>
+</div>
+
+</div>
+
+<script>
+const audio = document.getElementById("bgMusic");
+const slider = document.getElementById("volumeSlider");
+const btn = document.getElementById("playBtn");
+
+audio.volume = 0.1;
+
+slider.oninput = () => audio.volume = slider.value;
+
+function toggleMusic(){
+    if(audio.paused){
+        audio.play();
+        btn.textContent="⏸ Pause";
+    } else {
+        audio.pause();
+        btn.textContent="▶ Play";
+    }
+}
+
+window.onload = async ()=>{
+    try{
+        await audio.play();
+        btn.textContent="⏸ Pause";
+    }catch(e){}
+}
+</script>
+
+</body>
+</html>
