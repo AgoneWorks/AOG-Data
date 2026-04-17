@@ -55,7 +55,6 @@
         margin: 12px 0;
     }
 
-    /* LOGO */
     .logo {
         text-align: center;
         margin: 15px 0 10px;
@@ -67,7 +66,6 @@
         filter: drop-shadow(0 0 10px rgba(212,175,55,0.4));
     }
 
-    /* HERO */
     .hero {
         display: flex;
         align-items: center;
@@ -83,7 +81,6 @@
         border: 1px solid rgba(212,175,55,0.4);
     }
 
-    /* MUSIC */
     .music-box {
         text-align: center;
         margin-bottom: 15px;
@@ -117,7 +114,39 @@
 
     a { color: #f5d77a; text-decoration: none; }
 
-    /* 🔒 SECRET BUTTON */
+    .notes-card {
+        background: rgba(17,17,17,0.9);
+        border: 1px solid rgba(212,175,55,0.28);
+        border-radius: 14px;
+        padding: 18px;
+        margin: 20px 0 22px;
+        text-align: center;
+        box-shadow: 0 16px 30px rgba(0,0,0,0.22);
+    }
+
+    .notes-card h2 {
+        margin: 0 0 8px;
+        color: #fff2c9;
+        font-size: 1.2rem;
+    }
+
+    .notes-card p {
+        margin: 0 0 14px;
+        color: #d1d5db;
+        font-size: 0.95rem;
+    }
+
+    .notes-card a {
+        display: inline-block;
+        padding: 10px 16px;
+        border-radius: 999px;
+        background: linear-gradient(180deg, #caa049 0%, #a97b2a 100%);
+        color: #fff5dc;
+        font-weight: 700;
+        text-decoration: none;
+        box-shadow: 0 8px 18px rgba(122, 84, 23, 0.22);
+    }
+
     .secret-btn {
         position: fixed;
         bottom: 10px;
@@ -139,7 +168,6 @@
         opacity: 1;
     }
 
-    /* 🔻 FOOTER CREDIT */
     .footer-credit {
         text-align: center;
         font-size: 12px;
@@ -154,7 +182,6 @@
 
 <div class="container">
 
-<!-- MUSIC -->
 <div class="music-box">
     🔊 Background Music<br>
     <small>Created by Valhalla Asagard</small>
@@ -170,22 +197,25 @@
     </div>
 </div>
 
-<!-- LOGO -->
 <div class="logo">
-    <img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/logo.png">
+    <img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/logo.png" alt="AOG logo">
 </div>
 
 <h1>🛡️ AOG Alliance Rules</h1>
 <p class="subtitle">All members must follow these rules</p>
 
-<!-- GENERAL -->
+<div class="notes-card">
+    <h2>📢 Announcement Board</h2>
+    <p>Open the latest kingdom announcements and leader statements.</p>
+    <a href="https://aog-notes.vercel.app/" target="_blank" rel="noopener">Open Notes</a>
+</div>
+
 <div class="card">
 <h3>📜 General Rules</h3>
 <p>Joining the alliance means accepting all rules.</p>
 <p>Attacking NAP alliances is strictly forbidden.</p>
 </div>
 
-<!-- BEHAVIOR -->
 <div class="card">
 <h3>⚖️ Behavior</h3>
 <ul>
@@ -194,7 +224,6 @@
 </ul>
 </div>
 
-<!-- POSITION -->
 <div class="card">
 <h3>📍 Positioning</h3>
 <ul>
@@ -204,13 +233,11 @@
 </ul>
 </div>
 
-<!-- ACTIVITY -->
 <div class="card">
 <h3>🕒 Activity</h3>
 <p>Inactive players must inform R4/R5.</p>
 </div>
 
-<!-- EVENTS -->
 <div class="card">
 <h3>⚔️ Events</h3>
 
@@ -219,21 +246,21 @@
 
 <p>Attack Joiners:</p>
 <div class="hero">
-<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Chenko.avif">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Chenko.avif" alt="Chenko">
 <span>Chenko + any heroes</span>
 </div>
 
 <p>Defense Joiners:</p>
 <div class="hero">
-<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Gordon.webp">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Gordon.webp" alt="Gordon">
 <span>Gordon + any hero</span>
 </div>
 <div class="hero">
-<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Howard.avif">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Howard.avif" alt="Howard">
 <span>Howard + any hero</span>
 </div>
 <div class="hero">
-<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Zoe.avif">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Zoe.avif" alt="Zoe">
 <span>Zoe + any hero</span>
 </div>
 
@@ -246,27 +273,27 @@
 <p>Joiners (First Hero must be):</p>
 
 <div class="hero">
-<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Chenko.avif">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Chenko.avif" alt="Chenko">
 <span>Chenko</span>
 </div>
 
 <div class="hero">
-<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Amane.avif">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Amane.avif" alt="Amane">
 <span>Amane</span>
 </div>
 
 <div class="hero">
-<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Yeonwoo.avif">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Yeonwoo.avif" alt="Yeonwoo">
 <span>Yeonwoo</span>
 </div>
 
 <div class="hero">
-<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Amadeus.avif">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Amadeus.avif" alt="Amadeus">
 <span>Amadeus</span>
 </div>
 
 <div class="hero">
-<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Hilde.avif">
+<img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/Hilde.avif" alt="Hilde">
 <span>Hilde</span>
 </div>
 
@@ -282,10 +309,8 @@
 <li>No retaliation for tile hits</li>
 <li>Rules reset after event</li>
 </ul>
-
 </div>
 
-<!-- NAP -->
 <div class="card">
 <h3>🛑 NAP Protected Alliances</h3>
 <ul>
@@ -302,10 +327,8 @@
 
 </div>
 
-<!-- 🔒 SECRET BUTTON -->
 <div class="secret-btn" onclick="goSecret()"></div>
 
-<!-- FOOTER CREDIT -->
 <div class="footer-credit">
     Made by seveax
 </div>
@@ -330,7 +353,7 @@ function toggleMusic(){
 }
 
 function goSecret(){
-    window.location.href = "https://aog-rallytimer.vercel.app/";
+    window.location.href = "https://aog-notes.vercel.app/";
 }
 
 window.onload = async ()=>{
