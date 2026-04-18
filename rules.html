@@ -37,25 +37,25 @@
 <body>
 <div class="container">
   <div class="music-box">
-      ğŸ”Š Background Music<br>
+      🔊 Background Music<br>
       <small>Created by Valhalla Asagard</small>
       <audio id="bgMusic" loop>
           <source src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/audio.mp3">
       </audio>
       <div class="controls">
-          <button onclick="toggleMusic()" id="playBtn">â–¶ Play</button>
-          ğŸ”Š <input type="range" min="0" max="1" step="0.01" value="0.1" id="volumeSlider">
-          <a href="https://suno.com/s/cdCDzAd5TfGmnDFt" target="_blank" rel="noopener">ğŸµ Song</a>
+          <button onclick="toggleMusic()" id="playBtn">▶ Play</button>
+          🔊 <input type="range" min="0" max="1" step="0.01" value="0.1" id="volumeSlider">
+          <a href="https://suno.com/s/cdCDzAd5TfGmnDFt" target="_blank" rel="noopener">🎵 Song</a>
           <a href="./index.html" target="_blank" rel="noopener">Back to Main</a>
       </div>
   </div>
   <div class="logo">
       <img src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/Images/logo.png" alt="AOG logo">
   </div>
-  <h1>ğŸ›¡ï¸ AOG Alliance Rules</h1>
+  <h1>🛡️ AOG Alliance Rules</h1>
   <p class="subtitle">All members must follow these rules</p>
   <div class="card">
-      <h3>ğŸ“œ General Rules</h3>
+      <h3>📜 General Rules</h3>
       <p>Joining the alliance means accepting all rules.</p>
       <p>Attacking NAP alliances is strictly forbidden.</p>
   </div>
@@ -67,7 +67,7 @@
       </ul>
   </div>
   <div class="card">
-      <h3>ğŸ“ Positioning</h3>
+      <h3>📍 Positioning</h3>
       <ul>
           <li>Only assigned attackers near Bear Trap.</li>
           <li>Wrong placement harms alliance.</li>
@@ -75,7 +75,7 @@
       </ul>
   </div>
   <div class="card">
-      <h3>ğŸ•’ Activity</h3>
+      <h3>🕒 Activity</h3>
       <p>Inactive players must inform R4/R5.</p>
   </div>
   <div class="card">
@@ -110,7 +110,7 @@
       </ul>
   </div>
   <div class="card">
-      <h3>ğŸ›‘ NAP Protected Alliances</h3>
+      <h3>🛑 NAP Protected Alliances</h3>
       <ul>
           <li>TAO / Tao</li>
           <li>DIE / die</li>
@@ -131,10 +131,10 @@ const btn = document.getElementById("playBtn");
 audio.volume = 0.1;
 slider.oninput = () => audio.volume = slider.value;
 function toggleMusic(){
-    if(audio.paused){ audio.play(); btn.textContent="â¸ Pause"; }
-    else { audio.pause(); btn.textContent="â–¶ Play"; }
+    if(audio.paused){ audio.play(); btn.textContent="⏸ Pause"; }
+    else { audio.pause(); btn.textContent="▶ Play"; }
 }
-window.onload = async ()=>{ try{ await audio.play(); btn.textContent="â¸ Pause"; }catch(e){} }
+window.onload = async ()=>{ try{ await audio.play(); btn.textContent="⏸ Pause"; }catch(e){} }
 </script>
 </body>
 </html>

@@ -70,15 +70,15 @@
 <body>
 <div class="container">
   <div class="music-box">
-      ğŸ”Š Background Music<br>
+      🔊 Background Music<br>
       <small>Created by Valhalla Asagard</small>
       <audio id="bgMusic" loop>
           <source src="https://raw.githubusercontent.com/AgoneWorks/AOG-Data/refs/heads/main/audio.mp3">
       </audio>
       <div class="controls">
-          <button onclick="toggleMusic()" id="playBtn">â–¶ Play</button>
-          ğŸ”Š <input type="range" min="0" max="1" step="0.01" value="0.1" id="volumeSlider">
-          <a href="https://suno.com/s/cdCDzAd5TfGmnDFt" target="_blank" rel="noopener" style="color:#f5d77a;text-decoration:none;">ğŸµ Song</a>
+          <button onclick="toggleMusic()" id="playBtn">▶ Play</button>
+          🔊 <input type="range" min="0" max="1" step="0.01" value="0.1" id="volumeSlider">
+          <a href="https://suno.com/s/cdCDzAd5TfGmnDFt" target="_blank" rel="noopener" style="color:#f5d77a;text-decoration:none;">🎵 Song</a>
       </div>
   </div>
 
@@ -130,11 +130,11 @@ const btn = document.getElementById("playBtn");
 audio.volume = 0.1;
 slider.oninput = () => audio.volume = slider.value;
 function toggleMusic(){
-  if(audio.paused){ audio.play(); btn.textContent="â¸ Pause"; }
-  else { audio.pause(); btn.textContent="â–¶ Play"; }
+  if(audio.paused){ audio.play(); btn.textContent="⏸ Pause"; }
+  else { audio.pause(); btn.textContent="▶ Play"; }
 }
 function goSecret(){ window.location.href = "./rules.html"; }
-window.onload = async ()=>{ try{ await audio.play(); btn.textContent="â¸ Pause"; }catch(e){} }
+window.onload = async ()=>{ try{ await audio.play(); btn.textContent="⏸ Pause"; }catch(e){} }
 </script>
 </body>
 </html>
